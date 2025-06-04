@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Ownership-Cap Calculator</title>
+<title>Ownership Cap Calculator</title>
 <style>
     /* --- simple, Bootstrap-ish styling without dependencies --- */
     body {
@@ -33,7 +33,7 @@
 
     <div id="result">Max Position: <span id="sharesOut">—</span></div>
     <div class="muted">
-        Tip: Use <b>k</b> = thousand, <b>m</b> = million, <b>b</b> = billion.<br>
+        Tip: Use <b>K</b> = Thousand, <b>M</b> = Million, <b>B</b> = Billion.<br>
         Example: <code>80m</code> at <code>2.5%</code> → 2 000 000 shares.
     </div>
 </div>
