@@ -24,7 +24,7 @@
 <body>
 
 <div class="card">
-    <h1>Ownership-Cap Calculator</h1>
+    <h1>Ownership Cap Calculator</h1>
 
     <input id="floatInput" type="text" placeholder="Float (e.g. 50m, 27k, 80 000 000)" />
     <input id="pctInput"   type="text" placeholder="Max % of float (e.g. 3, 2.5%)" />
