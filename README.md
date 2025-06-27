@@ -3,83 +3,69 @@
     <meta charset="UTF-8" />
     <title>Risk Management Calculator</title>
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     html, body {
-        margin: 0;
-        padding: 0;
-        border: none;
-        height: 100vh;
-        font-family: "Segoe UI", Roboto, sans-serif;
-        background: #f5f7fa;
-        display: flex;
-        justify-content: center;
-    }
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100vh;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* GitHub injected elements fix */
-    .container-lg::before,
-    .container-lg::after,
-    .markdown-body::before,
-    .markdown-body::after {
-        display: none !important;
-        content: none !important;
-    }
+.card {
+    background: #fff;
+    max-width: 400px; /* reduced width */
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+    padding: 30px 24px; /* reduced padding */
+    text-align: center;
+}
 
-    .card {
-        background: #fff;
-        max-width: 480px;
-        width: 90%;
-        margin: 40px auto;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-        padding: 40px 32px;
-        text-align: center;
-    }
+h1 {
+    margin-top: 0;
+    font-size: 1.6rem; /* slightly smaller */
+    margin-bottom: 16px;
+}
 
-    h1 {
-        margin-top: 0;
-        font-size: 1.8rem;
-    }
+input {
+    width: 100%;
+    padding: 8px 12px; /* smaller padding */
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
 
-    input {
-        width: 100%;
-        padding: 10px 14px;
-        margin: 12px 0;
-        border: 1px solid #ced4da;
-        border-radius: 4px;
-        font-size: 1rem;
-    }
+button {
+    background: #2f6df6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px; /* smaller button */
+    font-size: 0.95rem;
+    cursor: pointer;
+}
 
-    button {
-        background: #2f6df6;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        cursor: pointer;
-    }
+button:hover {
+    background: #244dc3;
+}
 
-    button:hover {
-        background: #244dc3;
-    }
+#result {
+    font-size: 1.2rem; /* slightly smaller */
+    margin-top: 24px;
+    font-weight: 600;
+}
 
-    #result {
-        font-size: 1.3rem;
-        margin-top: 28px;
-        font-weight: 600;
-    }
-
-    .muted {
-        font-size: .9rem;
-        color: #6c757d;
-        margin-top: 20px;
-    }
-    </style>
+.muted {
+    font-size: 0.85rem; /* smaller text */
+    color: #6c757d;
+    margin-top: 16px;
+}
+</style>
 </head>
 <body>
 
