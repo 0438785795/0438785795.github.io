@@ -1,11 +1,19 @@
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Risk Management Calculator</title>
-<style>
+    <meta charset="UTF-8" />
+    <title>Risk Management Calculator</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     html, body {
         margin: 0;
         padding: 0;
+        border: none;
+        height: 100%;
         font-family: "Segoe UI", Roboto, sans-serif;
         background: #f5f7fa;
         display: flex;
@@ -82,43 +90,45 @@
 </div>
 
 <script>
-/* ---------- helpers ---------- */
-function parseInput(str) {
-    if (!str) return NaN;
-    str = str.replace(/,/g, '').trim().toLowerCase();
-    let mult = 1;
-    const last = str.slice(-1);
-    if (last === 'k') { mult = 1e3; str = str.slice(0, -1); }
-    else if (last === 'm') { mult = 1e6; str = str.slice(0, -1); }
-    const n = Number(str);
-    return isFinite(n) ? n * mult : NaN;
-}
-function parsePercent(str) {
-    if (!str) return NaN;
-    str = str.replace('%', '').trim();
-    const n = Number(str);
-    return isFinite(n) ? n : NaN;
-}
-function formatCommas(x) {
-    return x.toLocaleString('en-US', { maximumFractionDigits: 2 });
-}
-
-/* ---------- main logic ---------- */
-document.getElementById('calcBtn').addEventListener('click', () => {
-    const capital = parseInput(document.getElementById('capitalInput').value);
-    const stopLossPct = parsePercent(document.getElementById('stopLossInput').value);
-
-    if (isNaN(capital) || isNaN(stopLossPct) || capital <= 0 || stopLossPct <= 0) {
-        alert('Please enter valid numbers for both fields.');
-        return;
+    // ---------- helpers ----------
+    function parseInput(str) {
+        if (!str) return NaN;
+        str = str.replace(/,/g, '').trim().toLowerCase();
+        let mult = 1;
+        const last = str.slice(-1);
+        if (last === 'k') { mult = 1e3; str = str.slice(0, -1); }
+        else if (last === 'm') { mult = 1e6; str = str.slice(0, -1); }
+        const n = Number(str);
+        return isFinite(n) ? n * mult : NaN;
     }
 
-    const riskPerTrade = capital * 0.01; // 1% risk per trade
-    const maxPosition = riskPerTrade / (stopLossPct / 100);
+    function parsePercent(str) {
+        if (!str) return NaN;
+        str = str.replace('%', '').trim();
+        const n = Number(str);
+        return isFinite(n) ? n : NaN;
+    }
 
-    document.getElementById('positionOut').textContent =
-        formatCommas(maxPosition) + ' worth of position';
-});
+    function formatCommas(x) {
+        return x.toLocaleString('en-US', { maximumFractionDigits: 2 });
+    }
+
+    // ---------- main logic ----------
+    document.getElementById('calcBtn').addEventListener('click', () => {
+        const capital = parseInput(document.getElementById('capitalInput').value);
+        const stopLossPct = parsePercent(document.getElementById('stopLossInput').value);
+
+        if (isNaN(capital) || isNaN(stopLossPct) || capital <= 0 || stopLossPct <= 0) {
+            alert('Please enter valid numbers for both fields.');
+            return;
+        }
+
+        const riskPerTrade = capital * 0.01; // 1% risk per trade
+        const maxPosition = riskPerTrade / (stopLossPct / 100);
+
+        document.getElementById('positionOut').textContent =
+            formatCommas(maxPosition) + ' worth of position';
+    });
 </script>
 
 </body>
