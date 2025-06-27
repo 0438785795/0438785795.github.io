@@ -20,6 +20,15 @@
         justify-content: center;
     }
 
+    /* GitHub injected elements fix */
+    .container-lg::before,
+    .container-lg::after,
+    .markdown-body::before,
+    .markdown-body::after {
+        display: none !important;
+        content: none !important;
+    }
+
     .card {
         background: #fff;
         max-width: 480px;
@@ -70,7 +79,7 @@
         color: #6c757d;
         margin-top: 20px;
     }
-</style>
+    </style>
 </head>
 <body>
 
