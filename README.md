@@ -17,11 +17,11 @@ html, body {
 
 .card {
     background: #fff;
-    max-width: 400px; /* Smaller width */
+    max-width: 500px; /* Wider card */
     width: 90%;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
-    padding: 100px 24px; /* Taller card */
+    padding: 100px 36px; /* Taller card with good side spacing */
     text-align: center;
     box-sizing: border-box;
 }
@@ -70,28 +70,27 @@ button:hover {
 /* Responsive adjustments */
 @media (max-width: 480px) {
     .card {
-        max-width: 90%; /* Take up almost full width on mobile */
-        padding: 80px 16px; /* Slightly smaller padding on mobile */
+        max-width: 90%; /* Mobile-friendly width */
+        padding: 80px 16px; /* Reduced padding for small screens */
     }
 
     h1 {
-        font-size: 1.7rem; /* Adjust header size on small screens */
+        font-size: 1.7rem;
     }
 
     input, button {
-        font-size: 1rem; /* Adjust text size */
+        font-size: 1rem;
         padding: 12px 14px;
     }
 
     #result {
-        font-size: 1.4rem; /* Adjust result size */
+        font-size: 1.4rem;
     }
 
     .muted {
-        font-size: 0.9rem; /* Adjust muted text size */
+        font-size: 0.9rem;
     }
 }
-
 </style>
 </head>
 <body>
