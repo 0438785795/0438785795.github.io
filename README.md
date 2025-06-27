@@ -3,27 +3,65 @@
 <meta charset="UTF-8" />
 <title>Risk Management Calculator</title>
 <style>
-    body {
+    html, body {
+        margin: 0;
+        padding: 0;
         font-family: "Segoe UI", Roboto, sans-serif;
-        background: #f5f7fa; margin: 0; display: flex; justify-content: center;
+        background: #f5f7fa;
+        display: flex;
+        justify-content: center;
     }
+
     .card {
-        background: #fff; max-width: 480px; width: 90%; margin: 40px auto;
-        border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-        padding: 40px 32px; text-align: center;
+        background: #fff;
+        max-width: 480px;
+        width: 90%;
+        margin: 40px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+        padding: 40px 32px;
+        text-align: center;
     }
-    h1 { margin-top: 0; font-size: 1.8rem; }
+
+    h1 {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+
     input {
-        width: 100%; padding: 10px 14px; margin: 12px 0;
-        border: 1px solid #ced4da; border-radius: 4px; font-size: 1rem;
+        width: 100%;
+        padding: 10px 14px;
+        margin: 12px 0;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        font-size: 1rem;
     }
+
     button {
-        background: #2f6df6; color: #fff; border: none; border-radius: 4px;
-        padding: 10px 20px; font-size: 1rem; cursor: pointer;
+        background: #2f6df6;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
     }
-    button:hover { background: #244dc3; }
-    #result { font-size: 1.3rem; margin-top: 28px; font-weight: 600; }
-    .muted { font-size: .9rem; color: #6c757d; margin-top: 20px; }
+
+    button:hover {
+        background: #244dc3;
+    }
+
+    #result {
+        font-size: 1.3rem;
+        margin-top: 28px;
+        font-weight: 600;
+    }
+
+    .muted {
+        font-size: .9rem;
+        color: #6c757d;
+        margin-top: 20px;
+    }
 </style>
 </head>
 <body>
