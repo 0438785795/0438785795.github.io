@@ -17,36 +17,36 @@ html, body {
 
 .card {
     background: #fff;
-    max-width: 460px; /* Slightly larger */
+    max-width: 540px; /* Much wider */
     width: 90%;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-    padding: 36px 28px; /* Slightly larger padding */
+    border-radius: 12px; /* Slightly more rounded */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .1); /* Slightly deeper shadow */
+    padding: 48px 36px; /* Bigger padding */
     text-align: center;
 }
 
 h1 {
     margin-top: 0;
-    font-size: 1.8rem; /* Slightly larger heading */
-    margin-bottom: 18px;
+    font-size: 2rem; /* Bigger heading */
+    margin-bottom: 24px;
 }
 
 input {
     width: 100%;
-    padding: 12px 14px; /* Larger input fields */
-    margin: 12px 0;
+    padding: 14px 16px; /* Bigger input fields */
+    margin: 14px 0;
     border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 1rem; /* Slightly larger font */
+    border-radius: 6px;
+    font-size: 1.1rem;
 }
 
 button {
     background: #2f6df6;
     color: #fff;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px; /* Slightly larger button */
-    font-size: 1rem;
+    border-radius: 6px;
+    padding: 12px 24px; /* Bigger button */
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -55,15 +55,15 @@ button:hover {
 }
 
 #result {
-    font-size: 1.4rem; /* Slightly larger result text */
-    margin-top: 28px;
+    font-size: 1.6rem; /* Bigger result text */
+    margin-top: 32px;
     font-weight: 600;
 }
 
 .muted {
-    font-size: 0.95rem; /* Slightly larger muted text */
+    font-size: 1rem; /* Bigger muted text */
     color: #6c757d;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 </style>
 </head>
