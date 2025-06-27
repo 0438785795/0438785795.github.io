@@ -17,11 +17,11 @@ html, body {
 
 .card {
     background: #fff;
-    max-width: 500px; /* Wider card */
+    max-width: 560px; /* Wider card */
     width: 90%;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
-    padding: 100px 36px; /* Taller card with good side spacing */
+    padding: 100px 36px; /* Taller card with balanced side padding */
     text-align: center;
     box-sizing: border-box;
 }
@@ -70,8 +70,8 @@ button:hover {
 /* Responsive adjustments */
 @media (max-width: 480px) {
     .card {
-        max-width: 90%; /* Mobile-friendly width */
-        padding: 80px 16px; /* Reduced padding for small screens */
+        max-width: 90%;
+        padding: 80px 16px;
     }
 
     h1 {
