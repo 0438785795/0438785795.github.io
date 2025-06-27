@@ -13,7 +13,7 @@
         margin: 0;
         padding: 0;
         border: none;
-        height: 100%;
+        height: 100vh;
         font-family: "Segoe UI", Roboto, sans-serif;
         background: #f5f7fa;
         display: flex;
