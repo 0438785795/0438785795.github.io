@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     border: none;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Segoe UI", Roboto, sans-serif;
     background: #f5f7fa;
     display: flex;
@@ -17,12 +17,13 @@ html, body {
 
 .card {
     background: #fff;
-    max-width: 460px; /* Slightly smaller width */
+    max-width: 400px; /* Smaller width */
     width: 90%;
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
-    padding: 80px 36px; /* Much taller (increased vertical padding) */
+    padding: 100px 24px; /* Taller card */
     text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -65,6 +66,32 @@ button:hover {
     color: #6c757d;
     margin-top: 20px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .card {
+        max-width: 90%; /* Take up almost full width on mobile */
+        padding: 80px 16px; /* Slightly smaller padding on mobile */
+    }
+
+    h1 {
+        font-size: 1.7rem; /* Adjust header size on small screens */
+    }
+
+    input, button {
+        font-size: 1rem; /* Adjust text size */
+        padding: 12px 14px;
+    }
+
+    #result {
+        font-size: 1.4rem; /* Adjust result size */
+    }
+
+    .muted {
+        font-size: 0.9rem; /* Adjust muted text size */
+    }
+}
+
 </style>
 </head>
 <body>
