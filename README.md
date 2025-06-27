@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <title>Risk Management Calculator</title>
     <style>
-    html, body {
+html, body {
     margin: 0;
     padding: 0;
     border: none;
@@ -17,27 +17,27 @@
 
 .card {
     background: #fff;
-    max-width: 400px; /* reduced width */
+    max-width: 460px; /* Slightly larger */
     width: 90%;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
-    padding: 30px 24px; /* reduced padding */
+    padding: 36px 28px; /* Slightly larger padding */
     text-align: center;
 }
 
 h1 {
     margin-top: 0;
-    font-size: 1.6rem; /* slightly smaller */
-    margin-bottom: 16px;
+    font-size: 1.8rem; /* Slightly larger heading */
+    margin-bottom: 18px;
 }
 
 input {
     width: 100%;
-    padding: 8px 12px; /* smaller padding */
-    margin: 10px 0;
+    padding: 12px 14px; /* Larger input fields */
+    margin: 12px 0;
     border: 1px solid #ced4da;
     border-radius: 4px;
-    font-size: 0.95rem;
+    font-size: 1rem; /* Slightly larger font */
 }
 
 button {
@@ -45,8 +45,8 @@ button {
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 8px 16px; /* smaller button */
-    font-size: 0.95rem;
+    padding: 10px 20px; /* Slightly larger button */
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -55,15 +55,15 @@ button:hover {
 }
 
 #result {
-    font-size: 1.2rem; /* slightly smaller */
-    margin-top: 24px;
+    font-size: 1.4rem; /* Slightly larger result text */
+    margin-top: 28px;
     font-weight: 600;
 }
 
 .muted {
-    font-size: 0.85rem; /* smaller text */
+    font-size: 0.95rem; /* Slightly larger muted text */
     color: #6c757d;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 </style>
 </head>
