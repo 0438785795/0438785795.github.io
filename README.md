@@ -17,23 +17,23 @@ html, body {
 
 .card {
     background: #fff;
-    max-width: 540px; /* Much wider */
+    max-width: 460px; /* Slightly smaller width */
     width: 90%;
-    border-radius: 12px; /* Slightly more rounded */
-    box-shadow: 0 4px 14px rgba(0, 0, 0, .1); /* Slightly deeper shadow */
-    padding: 48px 36px; /* Bigger padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
+    padding: 80px 36px; /* Much taller (increased vertical padding) */
     text-align: center;
 }
 
 h1 {
     margin-top: 0;
-    font-size: 2rem; /* Bigger heading */
+    font-size: 2rem;
     margin-bottom: 24px;
 }
 
 input {
     width: 100%;
-    padding: 14px 16px; /* Bigger input fields */
+    padding: 14px 16px;
     margin: 14px 0;
     border: 1px solid #ced4da;
     border-radius: 6px;
@@ -45,7 +45,7 @@ button {
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 12px 24px; /* Bigger button */
+    padding: 12px 24px;
     font-size: 1.1rem;
     cursor: pointer;
 }
@@ -55,13 +55,13 @@ button:hover {
 }
 
 #result {
-    font-size: 1.6rem; /* Bigger result text */
+    font-size: 1.6rem;
     margin-top: 32px;
     font-weight: 600;
 }
 
 .muted {
-    font-size: 1rem; /* Bigger muted text */
+    font-size: 1rem;
     color: #6c757d;
     margin-top: 20px;
 }
